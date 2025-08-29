@@ -25,6 +25,7 @@ namespace TestCustomerWinForms.Net8
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnShowMessage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,12 +126,23 @@ namespace TestCustomerWinForms.Net8
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
+            //
+            // btnShowMessage
+            //
+            this.btnShowMessage.Location = new System.Drawing.Point(420, 77);
+            this.btnShowMessage.Name = "btnShowMessage";
+            this.btnShowMessage.Size = new System.Drawing.Size(100, 23);
+            this.btnShowMessage.TabIndex = 10;
+            this.btnShowMessage.Text = "Show Message";
+            this.btnShowMessage.UseVisualStyleBackColor = true;
+            this.btnShowMessage.Click += new System.EventHandler(this.btnShowMessage_Click);
+            //
             // MainForm
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.btnShowMessage);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -160,5 +172,6 @@ namespace TestCustomerWinForms.Net8
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnShowMessage;
     }
 }

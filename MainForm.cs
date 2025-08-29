@@ -113,6 +113,11 @@ namespace TestCustomerWinForms.Net8
 
         private void btnClear_Click(object? sender, EventArgs e) => ClearInputs();
 
+        private void btnShowMessage_Click(object? sender, EventArgs e)
+        {
+            MessageBox.Show("Hello from btnShowMessage!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         private void dgv_CellClick(object? sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.RowIndex < dgv.Rows.Count)
