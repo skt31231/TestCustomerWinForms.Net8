@@ -37,7 +37,11 @@ namespace TestCustomerWinForms.Net8
             txtName.Focus();
         }
 
-        private void btnLoad_Click(object? sender, EventArgs e) => LoadGrid();
+        private void btnLoad_Click(object? sender, EventArgs e)
+        {
+            LoadGrid();
+            Testing.ShowMessage();
+        }
 
         private byte[]? GetImageBytes()
         {
