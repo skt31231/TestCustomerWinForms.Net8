@@ -16,6 +16,8 @@ namespace TestCustomerWinForms.Net8
 
         public List<Customer> GetAll()
         {
+            //// Just checking github
+
             var list = new List<Customer>();
             using var conn = new SqlConnection(_connString);
             using var cmd = new SqlCommand("SELECT CustomerID, CustomerName FROM dbo.tblTestCustomer ORDER BY CustomerID", conn);
